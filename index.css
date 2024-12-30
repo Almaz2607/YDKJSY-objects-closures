@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(212, 185, 116);
+}
+
+.wrapper {
+    width: 60%;
+    height: 100%;
+    text-align: right;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: cornflowerblue;
+}
+
+.title {
+    font-size: 2.2em;
+    line-height: 120%;
+    color: rgb(253, 179, 145);
+    margin: 0 0 100px 0;
+    padding-top: 50px;
+}
+
+.author {
+    font-size: 1.7em;
+    font-weight: 500;
+    color: rgb(222, 178, 240);
+    margin: 0 0 150px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(253, 227, 187);
+}
+
+.cities {
+    display: flex;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.cities li:not(:first-child) {
+    position: relative;
+    margin-left: 20px;
+}
+
+.cities li::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 6px;
+    left: -12px;
+    background-color: rgb(223, 221, 151);
+}
+
+.publishing {
+    position: relative;
+    margin: 0;
+}
+
+.publishing span {
+    margin-right: 6px;
+}
+
+.publishing span::after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: 3px;
+    left: 12px;
+    background-color: rgb(233, 238, 165);
+}
